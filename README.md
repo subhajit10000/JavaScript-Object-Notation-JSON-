@@ -11,7 +11,6 @@ Because JSON has a strict but simple syntax, it is less verbose than XML and eas
 JSON is the dominant format for web APIs and configuration files. When your browser fetches data from a server, the server often responds with JSON. Mobile apps, IoT devices, and cloud services use it to sync state. Tools like package.json define project settings for Node.js, and many databases such as MongoDB store records in a JSON-like format called BSON.
 
 To work with JSON, most languages provide built-in methods. JavaScript has JSON.parse to convert a JSON string into an object and JSON.stringify to do the reverse. Python uses the json module with json.loads and json.dumps. These utilities handle the encoding and decoding details, including proper escaping.
-
 Common pitfalls include using single quotes instead of double quotes, adding a comma after the last element, or trying to include functions and dates. JSON has no native date type, so dates are usually represented as ISO 8601 strings like "2026-05-17T09:30:00Z". If you need comments for configuration, formats like JSON5 or YAML are alternatives, but they are not standard JSON.
 
 For validation, JSON Schema lets you define the expected structure, types, and constraints of a JSON document. Linters and formatters help keep JSON clean, especially in large files. Because it is text based, JSON is easy to diff in version control and can be compressed for network transfer.
