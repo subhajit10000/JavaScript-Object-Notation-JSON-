@@ -109,6 +109,7 @@
     display: none; 
   }
 
+
   #jsonOutput:has(pre) {
     display: block;
   }
